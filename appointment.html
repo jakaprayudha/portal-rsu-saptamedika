@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Buat Janji | RSU Sapta Medika Indrapura</title>
+
+    <meta
+      name="description"
+      content="Buat janji konsultasi dan pelayanan kesehatan secara online di RSU Sapta Medika Indrapura."
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/appointment.css" />
+    <link rel="stylesheet" href="assets/css/about.css" />
+    <link rel="stylesheet" href="assets/css/contact.css" />
+  </head>
+
+  <body class="appointment-page">
+    <!-- HEADER -->
+    <div id="header"></div>
+
+    <main>
+      <!-- =========================================
+           PAGE HERO
+      ========================================== -->
+
+      <section class="page-hero appointment-hero">
+        <div class="container">
+          <div class="page-hero-content reveal">
+            <div class="breadcrumb">
+              <a href="index.html">Beranda</a>
+              <span>/</span>
+              <span>Buat Janji</span>
+            </div>
+
+            <span class="section-kicker">ONLINE APPOINTMENT</span>
+
+            <h1>
+              Buat Janji
+              <span>Pelayanan</span>
+            </h1>
+
+            <p>
+              Buat janji konsultasi dengan dokter RSU Sapta Medika Indrapura
+              dengan lebih mudah dan praktis.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================
+           APPOINTMENT
+      ========================================== -->
+
+      <section class="section appointment-section">
+        <div class="container">
+          <div class="appointment-layout">
+            <!-- LEFT INFORMATION -->
+
+            <aside class="appointment-info reveal">
+              <span class="section-kicker">BUAT JANJI ONLINE</span>
+
+              <h2>
+                Kesehatan Anda,
+                <span>Prioritas Kami</span>
+              </h2>
+
+              <p>
+                Isi formulir di samping untuk mengajukan jadwal konsultasi
+                dengan dokter atau layanan yang tersedia di RSU Sapta Medika
+                Indrapura.
+              </p>
+
+              <div class="appointment-steps">
+                <!-- STEP 1 -->
+
+                <div class="appointment-step">
+                  <div class="step-number">01</div>
+
+                  <div>
+                    <h4>Pilih Layanan</h4>
+
+                    <p>Pilih poliklinik atau layanan yang Anda butuhkan.</p>
+                  </div>
+                </div>
+
+                <!-- STEP 2 -->
+
+                <div class="appointment-step">
+                  <div class="step-number">02</div>
+
+                  <div>
+                    <h4>Pilih Dokter</h4>
+
+                    <p>Tentukan dokter yang ingin Anda kunjungi.</p>
+                  </div>
+                </div>
+
+                <!-- STEP 3 -->
+
+                <div class="appointment-step">
+                  <div class="step-number">03</div>
+
+                  <div>
+                    <h4>Pilih Jadwal</h4>
+
+                    <p>Tentukan tanggal kunjungan yang Anda inginkan.</p>
+                  </div>
+                </div>
+
+                <!-- STEP 4 -->
+
+                <div class="appointment-step">
+                  <div class="step-number">04</div>
+
+                  <div>
+                    <h4>Konfirmasi</h4>
+
+                    <p>
+                      Tim kami akan membantu melakukan konfirmasi jadwal Anda.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- EMERGENCY -->
+
+              <div class="appointment-emergency">
+                <div class="emergency-icon">🚑</div>
+
+                <div>
+                  <strong>Dalam Kondisi Darurat?</strong>
+
+                  <span>
+                    Untuk kondisi darurat, segera hubungi layanan IGD.
+                  </span>
+
+                  <a href="tel:+6225431525"> ☎ Hubungi IGD </a>
+                </div>
+              </div>
+            </aside>
+
+            <!-- FORM -->
+
+            <div class="appointment-form-wrapper reveal">
+              <div class="appointment-form-header">
+                <span>FORMULIR PENDAFTARAN</span>
+
+                <h2>Buat Janji Konsultasi</h2>
+
+                <p>Lengkapi data berikut untuk mengajukan jadwal kunjungan.</p>
+              </div>
+
+              <form id="appointmentForm" class="appointment-form">
+                <!-- NAMA -->
+
+                <div class="form-group full">
+                  <label for="patientName">
+                    Nama Lengkap
+                    <span>*</span>
+                  </label>
+
+                  <input
+                    type="text"
+                    id="patientName"
+                    name="patientName"
+                    placeholder="Masukkan nama lengkap"
+                    required
+                  />
+                </div>
+
+                <!-- PHONE -->
+
+                <div class="form-group">
+                  <label for="phone">
+                    Nomor WhatsApp
+                    <span>*</span>
+                  </label>
+
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="08xxxxxxxxxx"
+                    required
+                  />
+                </div>
+
+                <!-- EMAIL -->
+
+                <div class="form-group">
+                  <label for="email"> Email </label>
+
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="email@anda.com"
+                  />
+                </div>
+
+                <!-- NIK -->
+
+                <div class="form-group">
+                  <label for="nik"> NIK </label>
+
+                  <input
+                    type="text"
+                    id="nik"
+                    name="nik"
+                    placeholder="Masukkan NIK"
+                    maxlength="16"
+                  />
+                </div>
+
+                <!-- DATE -->
+
+                <div class="form-group">
+                  <label for="birthDate"> Tanggal Lahir </label>
+
+                  <input type="date" id="birthDate" name="birthDate" />
+                </div>
+
+                <!-- SERVICE -->
+
+                <div class="form-group">
+                  <label for="service">
+                    Pilih Layanan
+                    <span>*</span>
+                  </label>
+
+                  <select id="service" name="service" required>
+                    <option value="">-- Pilih Layanan --</option>
+
+                    <option value="penyakit-dalam">
+                      Poliklinik Penyakit Dalam
+                    </option>
+
+                    <option value="anak">Poliklinik Anak</option>
+
+                    <option value="bedah">Poliklinik Bedah</option>
+
+                    <option value="obgyn">Poliklinik Obgyn</option>
+
+                    <option value="paru">Poliklinik Paru</option>
+
+                    <option value="usg">Poliklinik USG</option>
+                  </select>
+                </div>
+
+                <!-- DOCTOR -->
+
+                <div class="form-group">
+                  <label for="doctor">
+                    Pilih Dokter
+                    <span>*</span>
+                  </label>
+
+                  <select id="doctor" name="doctor" required>
+                    <option value="">-- Pilih Dokter --</option>
+
+                    <option value="emir">
+                      dr. Emir Fariz Fajrin Purba, Sp.PD
+                    </option>
+
+                    <option value="hendri">
+                      dr. Hendri Simanjuntak, Sp.OG
+                    </option>
+
+                    <option value="ridwan">dr. Ridwan Angkasa, Sp.PD</option>
+
+                    <option value="suwandy">
+                      dr. Suwandy Eka Syahputra, Sp.B
+                    </option>
+
+                    <option value="fitriyani">
+                      dr. Fitriyani Siregar, Sp.PD
+                    </option>
+
+                    <option value="herdi">
+                      dr. Herdi Gunanta Syaiful, Sp.B
+                    </option>
+
+                    <option value="triska">
+                      dr. Triska Antony Manday, Sp.A
+                    </option>
+
+                    <option value="wan-betty">
+                      dr. Wan Betty Pratiwi, Sp.P
+                    </option>
+
+                    <option value="omar">dr. Omar Szaly Aldy, Sp.A</option>
+
+                    <option value="ivan">dr. Ivan Anshari Lubis, Sp.Rad</option>
+                  </select>
+                </div>
+
+                <!-- APPOINTMENT DATE -->
+
+                <div class="form-group">
+                  <label for="appointmentDate">
+                    Tanggal Kunjungan
+                    <span>*</span>
+                  </label>
+
+                  <input
+                    type="date"
+                    id="appointmentDate"
+                    name="appointmentDate"
+                    required
+                  />
+                </div>
+
+                <!-- PAYMENT -->
+
+                <div class="form-group">
+                  <label for="payment">
+                    Jenis Pembayaran
+                    <span>*</span>
+                  </label>
+
+                  <select id="payment" name="payment" required>
+                    <option value="">-- Pilih Pembayaran --</option>
+
+                    <option value="umum">Pasien Umum</option>
+
+                    <option value="bpjs">BPJS Kesehatan</option>
+
+                    <option value="asuransi">Asuransi</option>
+                  </select>
+                </div>
+
+                <!-- COMPLAINT -->
+
+                <div class="form-group full">
+                  <label for="complaint"> Keluhan / Keperluan </label>
+
+                  <textarea
+                    id="complaint"
+                    name="complaint"
+                    rows="4"
+                    placeholder="Tuliskan keluhan atau keperluan Anda..."
+                  ></textarea>
+                </div>
+
+                <!-- AGREEMENT -->
+
+                <div class="form-checkbox full">
+                  <input type="checkbox" id="agreement" required />
+
+                  <label for="agreement">
+                    Saya menyetujui data yang diberikan digunakan untuk
+                    keperluan pendaftaran dan pelayanan RSU Sapta Medika
+                    Indrapura.
+                  </label>
+                </div>
+
+                <!-- BUTTON -->
+
+                <div class="form-group full">
+                  <button
+                    type="submit"
+                    class="btn btn-primary appointment-submit"
+                  >
+                    Buat Janji Sekarang
+                    <span>→</span>
+                  </button>
+
+                  <p class="appointment-note">
+                    * Permintaan janji akan dikonfirmasi oleh petugas rumah
+                    sakit.
+                  </p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================
+           CONTACT CTA
+      ========================================== -->
+
+      <section class="contact-cta">
+        <div class="container">
+          <div class="contact-cta-content reveal">
+            <div>
+              <span>BUTUH BANTUAN?</span>
+
+              <h2>Hubungi Tim Kami</h2>
+
+              <p>
+                Tim RSU Sapta Medika Indrapura siap membantu memberikan
+                informasi mengenai layanan dan jadwal dokter.
+              </p>
+            </div>
+
+            <div class="contact-cta-buttons">
+              <a
+                href="https://wa.me/62621123456"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-light"
+              >
+                WhatsApp Kami
+                <span>→</span>
+              </a>
+
+              <a href="kontak.html" class="btn btn-outline-light">
+                Informasi Kontak
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <div id="footer"></div>
+
+    <!-- SUCCESS MODAL -->
+
+    <div class="appointment-modal" id="appointmentModal">
+      <div class="appointment-modal-box">
+        <div class="appointment-success-icon">✓</div>
+
+        <span>PERMINTAAN BERHASIL</span>
+
+        <h2>Janji Anda Telah Dikirim</h2>
+
+        <p>
+          Terima kasih. Permintaan janji Anda telah kami terima. Tim RSU Sapta
+          Medika akan melakukan konfirmasi melalui nomor WhatsApp yang
+          terdaftar.
+        </p>
+
+        <button
+          type="button"
+          class="btn btn-primary"
+          id="closeAppointmentModal"
+        >
+          Kembali
+        </button>
+      </div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+
+    <script src="assets/js/components.js"></script>
+
+    <script src="assets/js/app.js"></script>
+
+    <script src="assets/js/appointment.js"></script>
+  </body>
+</html>

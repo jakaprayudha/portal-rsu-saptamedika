@@ -1,0 +1,732 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Dokter | RSU Sapta Medika Indrapura</title>
+
+    <meta
+      name="description"
+      content="Informasi dokter dan jadwal praktik RSU Sapta Medika Indrapura."
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/about.css" />
+    <link rel="stylesheet" href="assets/css/doctor.css" />
+    <link rel="stylesheet" href="assets/css/contact.css" />
+  </head>
+
+  <body class="doctors-page">
+    <!-- HEADER -->
+
+    <div id="header"></div>
+
+    <main>
+      <!-- =====================================
+           HERO
+      ====================================== -->
+
+      <section class="page-hero doctors-hero">
+        <div class="container">
+          <div class="page-hero-content reveal">
+            <div class="breadcrumb">
+              <a href="index.html">Beranda</a>
+
+              <span>/</span>
+
+              <span>Dokter</span>
+            </div>
+
+            <span class="section-kicker">TENAGA MEDIS PROFESIONAL</span>
+
+            <h1>
+              Temukan Dokter
+              <span>Yang Anda Butuhkan</span>
+            </h1>
+
+            <p>
+              RSU Sapta Medika Indrapura didukung oleh dokter profesional dari
+              berbagai bidang spesialisasi untuk memberikan pelayanan kesehatan
+              terbaik bagi Anda dan keluarga.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================
+           STATISTICS
+      ====================================== -->
+
+      <section class="doctor-stat-section">
+        <div class="container">
+          <div class="doctor-stat-grid">
+            <div class="doctor-stat reveal">
+              <strong>10+</strong>
+
+              <span>Dokter Spesialis</span>
+            </div>
+
+            <div class="doctor-stat reveal">
+              <strong>7</strong>
+
+              <span>Bidang Spesialisasi</span>
+            </div>
+
+            <div class="doctor-stat reveal">
+              <strong>24/7</strong>
+
+              <span>Pelayanan Kesehatan</span>
+            </div>
+
+            <div class="doctor-stat reveal">
+              <strong>100%</strong>
+
+              <span>Berorientasi Pasien</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================
+           INTRO
+      ====================================== -->
+
+      <section class="section doctors-intro-section">
+        <div class="container">
+          <div class="section-heading center reveal">
+            <span class="section-kicker">TIM DOKTER KAMI</span>
+
+            <h2>
+              Dokter Profesional
+              <span>RSU Sapta Medika</span>
+            </h2>
+
+            <p>
+              Pilih dokter berdasarkan bidang spesialisasi dan lihat jadwal
+              praktik untuk mendapatkan pelayanan yang sesuai dengan kebutuhan
+              Anda.
+            </p>
+          </div>
+
+          <!-- SEARCH -->
+
+          <div class="doctor-search-wrapper reveal">
+            <div class="doctor-search">
+              <span class="search-icon">⌕</span>
+
+              <input
+                type="text"
+                id="doctorSearch"
+                placeholder="Cari nama dokter atau spesialisasi..."
+              />
+            </div>
+          </div>
+
+          <!-- FILTER -->
+
+          <div class="doctor-filter reveal">
+            <button class="doctor-filter-btn active" data-filter="all">
+              Semua
+            </button>
+
+            <button class="doctor-filter-btn" data-filter="penyakit-dalam">
+              Penyakit Dalam
+            </button>
+
+            <button class="doctor-filter-btn" data-filter="obgyn">Obgyn</button>
+
+            <button class="doctor-filter-btn" data-filter="bedah">Bedah</button>
+
+            <button class="doctor-filter-btn" data-filter="anak">Anak</button>
+
+            <button class="doctor-filter-btn" data-filter="paru">Paru</button>
+
+            <button class="doctor-filter-btn" data-filter="radiologi">
+              Radiologi
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================
+           DOCTOR LIST
+      ====================================== -->
+
+      <section class="section doctor-list-section">
+        <div class="container">
+          <div class="doctor-grid-full" id="doctorGrid">
+            <!-- =====================================
+                 01 - EMIR
+            ====================================== -->
+
+            <article
+              class="doctor-card-full reveal"
+              data-category="penyakit-dalam"
+              data-search="emir fariz fajrin purba penyakit dalam"
+            >
+              <div class="doctor-card-photo">
+                <img
+                  src="assets/img/doctors/dr.emir.png"
+                  alt="dr. Emir Fariz Fajrin Purba"
+                />
+
+                <div class="doctor-photo-bg"></div>
+
+                <div class="doctor-card-number">01</div>
+              </div>
+
+              <div class="doctor-card-body">
+                <div class="doctor-specialty-badge">PENYAKIT DALAM</div>
+
+                <h3>dr. Emir Fariz Fajrin Purba, M.Ked(PD), Sp.PD, FINASIM</h3>
+
+                <p class="doctor-position">Spesialis Penyakit Dalam</p>
+
+                <div class="doctor-divider"></div>
+
+                <div class="doctor-schedule-list">
+                  <div class="doctor-schedule-item">
+                    <span>Senin</span>
+
+                    <strong>09.00 - 11.00 WIB</strong>
+                  </div>
+
+                  <div class="doctor-schedule-item">
+                    <span>Rabu</span>
+
+                    <strong>13.30 - 15.30 WIB</strong>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- =====================================
+                 02 - HENDRI
+            ====================================== -->
+
+            <article
+              class="doctor-card-full reveal"
+              data-category="obgyn"
+              data-search="hendri simanjuntak obgyn kandungan obstetri ginekologi"
+            >
+              <div class="doctor-card-photo">
+                <img
+                  src="assets/img/doctors/dr.hendry.png"
+                  alt="dr. Hendri Simanjuntak"
+                />
+
+                <div class="doctor-photo-bg"></div>
+
+                <div class="doctor-card-number">02</div>
+              </div>
+
+              <div class="doctor-card-body">
+                <div class="doctor-specialty-badge">OBSGYN</div>
+
+                <h3>dr. Hendri Simanjuntak, Sp.OG</h3>
+
+                <p class="doctor-position">Spesialis Obstetri & Ginekologi</p>
+
+                <div class="doctor-divider"></div>
+
+                <div class="doctor-schedule-list">
+                  <div class="doctor-schedule-item">
+                    <span>Senin - Selasa</span>
+
+                    <strong>14.00 - 16.00 WIB</strong>
+                  </div>
+
+                  <div class="doctor-schedule-item">
+                    <span>Rabu - Kamis</span>
+
+                    <strong>15.00 - 17.00 WIB</strong>
+                  </div>
+
+                  <div class="doctor-schedule-item">
+                    <span>Jumat</span>
+
+                    <strong>14.00 - 16.00 WIB</strong>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- =====================================
+                 03 - RIDWAN
+            ====================================== -->
+
+            <article
+              class="doctor-card-full reveal"
+              data-category="penyakit-dalam"
+              data-search="ridwan angkasa penyakit dalam"
+            >
+              <div class="doctor-card-photo">
+                <img
+                  src="assets/img/doctors/dr.ridwan.png"
+                  alt="dr. Ridwan Angkasa"
+                />
+
+                <div class="doctor-photo-bg"></div>
+
+                <div class="doctor-card-number">03</div>
+              </div>
+
+              <div class="doctor-card-body">
+                <div class="doctor-specialty-badge">PENYAKIT DALAM</div>
+
+                <h3>dr. Ridwan Angkasa, MARS, Sp.PD, FPCP, AIFO-K, DABPM</h3>
+
+                <p class="doctor-position">Spesialis Penyakit Dalam</p>
+
+                <div class="doctor-divider"></div>
+
+                <div class="doctor-schedule-list">
+                  <div class="doctor-schedule-item">
+                    <span>Senin</span>
+
+                    <strong>14.00 - 17.00 WIB</strong>
+                  </div>
+
+                  <div class="doctor-schedule-item">
+                    <span>Selasa</span>
+
+                    <strong>09.00 - 11.00 WIB</strong>
+                  </div>
+
+                  <div class="doctor-schedule-item">
+                    <span>Kamis</span>
+
+                    <strong>14.00 - 17.00 WIB</strong>
+                  </div>
+
+                  <div class="doctor-schedule-item">
+                    <span>Jumat</span>
+
+                    <strong>09.00 - 11.00 WIB</strong>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- =====================================
+                 04 - SUWANDY
+            ====================================== -->
+
+            <article
+              class="doctor-card-full reveal"
+              data-category="bedah"
+              data-search="suwandy eka syahputra bedah"
+            >
+              <div class="doctor-card-photo">
+                <img
+                  src="assets/img/doctors/dr.suwandy.png"
+                  alt="dr. Suwandy Eka Syahputra"
+                />
+
+                <div class="doctor-photo-bg"></div>
+
+                <div class="doctor-card-number">04</div>
+              </div>
+
+              <div class="doctor-card-body">
+                <div class="doctor-specialty-badge">BEDAH</div>
+
+                <h3>dr. Suwandy Eka Syahputra, MSi.Med, Sp.B</h3>
+
+                <p class="doctor-position">Spesialis Bedah</p>
+
+                <div class="doctor-divider"></div>
+
+                <div class="doctor-schedule-list">
+                  <div class="doctor-schedule-item">
+                    <span>Senin</span>
+
+                    <strong>08.30 - 10.30 WIB</strong>
+                  </div>
+
+                  <div class="doctor-schedule-item">
+                    <span>Jumat</span>
+
+                    <strong>14.00 - 16.00 WIB</strong>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- =====================================
+                 05 - FITRIYANI
+            ====================================== -->
+
+            <article
+              class="doctor-card-full reveal"
+              data-category="penyakit-dalam"
+              data-search="fitriyani siregar penyakit dalam"
+            >
+              <div class="doctor-card-photo">
+                <img
+                  src="assets/img/doctors/dr.fitri.png"
+                  alt="dr. Fitriyani Siregar"
+                />
+
+                <div class="doctor-photo-bg"></div>
+
+                <div class="doctor-card-number">05</div>
+              </div>
+
+              <div class="doctor-card-body">
+                <div class="doctor-specialty-badge">PENYAKIT DALAM</div>
+
+                <h3>dr. Fitriyani Siregar, M.Ked(PD), Sp.PD</h3>
+
+                <p class="doctor-position">Spesialis Penyakit Dalam</p>
+
+                <div class="doctor-divider"></div>
+
+                <div class="doctor-schedule-list">
+                  <div class="doctor-schedule-item">
+                    <span>Selasa</span>
+
+                    <strong>14.00 - 16.00 WIB</strong>
+                  </div>
+
+                  <div class="doctor-schedule-item">
+                    <span>Rabu</span>
+
+                    <strong>08.00 - 10.00 WIB</strong>
+                  </div>
+
+                  <div class="doctor-schedule-item">
+                    <span>Jumat</span>
+
+                    <strong>14.00 - 16.00 WIB</strong>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- =====================================
+                 06 - HERDI
+            ====================================== -->
+
+            <article
+              class="doctor-card-full reveal"
+              data-category="bedah"
+              data-search="herdi gunanta syaiful bedah"
+            >
+              <div class="doctor-card-photo">
+                <img
+                  src="assets/img/doctors/dr.herdi.png"
+                  alt="dr. Herdi Gunanta Syaiful"
+                />
+
+                <div class="doctor-photo-bg"></div>
+
+                <div class="doctor-card-number">06</div>
+              </div>
+
+              <div class="doctor-card-body">
+                <div class="doctor-specialty-badge">BEDAH</div>
+
+                <h3>dr. Herdi Gunanta Syaiful, Sp.B</h3>
+
+                <p class="doctor-position">Spesialis Bedah</p>
+
+                <div class="doctor-divider"></div>
+
+                <div class="doctor-schedule-list">
+                  <div class="doctor-schedule-item">
+                    <span>Senin - Rabu</span>
+
+                    <strong>14.00 - 16.00 WIB</strong>
+                  </div>
+
+                  <div class="doctor-schedule-item">
+                    <span>Kamis - Jumat</span>
+
+                    <strong>09.00 - 11.00 WIB</strong>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- =====================================
+                 07 - TRISKA
+            ====================================== -->
+
+            <article
+              class="doctor-card-full reveal"
+              data-category="anak"
+              data-search="triska antony manday anak pediatri"
+            >
+              <div class="doctor-card-photo">
+                <img
+                  src="assets/img/doctors/dr.triska.png"
+                  alt="dr. Triska Antony Manday"
+                />
+
+                <div class="doctor-photo-bg"></div>
+
+                <div class="doctor-card-number">07</div>
+              </div>
+
+              <div class="doctor-card-body">
+                <div class="doctor-specialty-badge">ANAK</div>
+
+                <h3>dr. Triska Antony Manday, M.Ked (Ped), Sp.A</h3>
+
+                <p class="doctor-position">Spesialis Anak</p>
+
+                <div class="doctor-divider"></div>
+
+                <div class="doctor-schedule-list">
+                  <div class="doctor-schedule-item">
+                    <span>Selasa</span>
+
+                    <strong>11.30 - 13.30 WIB</strong>
+                  </div>
+
+                  <div class="doctor-schedule-item">
+                    <span>Kamis</span>
+
+                    <strong>08.30 - 11.30 WIB</strong>
+                  </div>
+
+                  <div class="doctor-schedule-item">
+                    <span>Jumat</span>
+
+                    <strong>16.00 - 18.00 WIB</strong>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- =====================================
+                 08 - WAN BETTY
+            ====================================== -->
+
+            <article
+              class="doctor-card-full reveal"
+              data-category="paru"
+              data-search="wan betty pratiwi paru"
+            >
+              <div class="doctor-card-photo">
+                <img
+                  src="assets/img/doctors/dr.wan-betty.png"
+                  alt="dr. Wan Betty Pratiwi"
+                />
+
+                <div class="doctor-photo-bg"></div>
+
+                <div class="doctor-card-number">08</div>
+              </div>
+
+              <div class="doctor-card-body">
+                <div class="doctor-specialty-badge">PARU</div>
+
+                <h3>dr. Wan Betty Pratiwi, M.Ked (Paru), Sp.P</h3>
+
+                <p class="doctor-position">Spesialis Paru</p>
+
+                <div class="doctor-divider"></div>
+
+                <div class="doctor-schedule-list">
+                  <div class="doctor-schedule-item">
+                    <span>Senin</span>
+
+                    <strong>15.00 - 17.00 WIB</strong>
+                  </div>
+
+                  <div class="doctor-schedule-item">
+                    <span>Jumat</span>
+
+                    <strong>15.00 - 17.00 WIB</strong>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- =====================================
+                 09 - OMAR
+            ====================================== -->
+
+            <article
+              class="doctor-card-full reveal"
+              data-category="anak"
+              data-search="omar szaly aldy anak pediatri"
+            >
+              <div class="doctor-card-photo">
+                <img
+                  src="assets/img/doctors/dr.omar.png"
+                  alt="dr. Omar Szaly Aldy"
+                />
+
+                <div class="doctor-photo-bg"></div>
+
+                <div class="doctor-card-number">09</div>
+              </div>
+
+              <div class="doctor-card-body">
+                <div class="doctor-specialty-badge">ANAK</div>
+
+                <h3>dr. Omar Szaly Aldy, Sp.A</h3>
+
+                <p class="doctor-position">Spesialis Anak</p>
+
+                <div class="doctor-divider"></div>
+
+                <div class="doctor-schedule-list">
+                  <div class="doctor-schedule-item">
+                    <span>Senin</span>
+
+                    <strong>09.00 - 11.00 WIB</strong>
+                  </div>
+
+                  <div class="doctor-schedule-item">
+                    <span>Selasa</span>
+
+                    <strong>09.00 - 11.00 WIB</strong>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- =====================================
+                 10 - IVAN
+            ====================================== -->
+
+            <article
+              class="doctor-card-full reveal"
+              data-category="radiologi"
+              data-search="ivan anshari lubis radiologi usg"
+            >
+              <div class="doctor-card-photo">
+                <img
+                  src="assets/img/doctors/dr.ivan.png"
+                  alt="dr. Ivan Anshari Lubis"
+                />
+
+                <div class="doctor-photo-bg"></div>
+
+                <div class="doctor-card-number">10</div>
+              </div>
+
+              <div class="doctor-card-body">
+                <div class="doctor-specialty-badge">POLIKLINIK USG</div>
+
+                <h3>dr. Ivan Anshari Lubis, Sp.Rad</h3>
+
+                <p class="doctor-position">Spesialis Radiologi</p>
+
+                <div class="doctor-divider"></div>
+
+                <div class="doctor-schedule-list">
+                  <div class="doctor-schedule-item">
+                    <span>Rabu</span>
+
+                    <strong>15.00 - 17.00 WIB</strong>
+                  </div>
+
+                  <div class="doctor-schedule-item">
+                    <span>Jumat</span>
+
+                    <strong>14.00 - 16.00 WIB</strong>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- EMPTY STATE -->
+
+          <div class="doctor-empty" id="doctorEmpty">
+            <div>🔍</div>
+
+            <h3>Dokter Tidak Ditemukan</h3>
+
+            <p>Coba gunakan kata kunci atau kategori yang berbeda.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================
+           INFORMATION
+      ====================================== -->
+
+      <section class="doctor-information-section">
+        <div class="container">
+          <div class="doctor-information reveal">
+            <div class="doctor-information-icon">📅</div>
+
+            <div>
+              <span>INFORMASI JADWAL</span>
+
+              <h2>Jadwal Dokter Dapat Berubah</h2>
+
+              <p>
+                Jadwal praktik dokter dapat mengalami perubahan sewaktu-waktu.
+                Untuk informasi terbaru, silakan hubungi RSU Sapta Medika
+                Indrapura.
+              </p>
+            </div>
+
+            <a href="kontak.html" class="btn btn-primary">
+              Hubungi Kami
+              <span>→</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================
+           CTA
+      ====================================== -->
+
+      <section class="contact-cta">
+        <div class="container">
+          <div class="contact-cta-content reveal">
+            <div>
+              <span>BUTUH INFORMASI?</span>
+
+              <h2>Hubungi RSU Sapta Medika</h2>
+
+              <p>
+                Tim kami siap membantu memberikan informasi mengenai jadwal
+                dokter dan pelayanan kesehatan.
+              </p>
+            </div>
+
+            <div class="contact-cta-buttons">
+              <a
+                href="https://wa.me/62621123456"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-light"
+              >
+                WhatsApp Kami
+                <span>→</span>
+              </a>
+
+              <a href="tel:+62621123456" class="btn btn-outline-light">
+                ☎ Telepon Kami
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+
+    <div id="footer"></div>
+
+    <!-- JAVASCRIPT -->
+
+    <script src="assets/js/components.js"></script>
+
+    <script src="assets/js/app.js"></script>
+
+    <script src="assets/js/doctors.js"></script>
+  </body>
+</html>
