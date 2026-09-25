@@ -69,7 +69,7 @@
             </div>
 
             <div class="doctor-stat reveal">
-              <strong>7</strong>
+              <strong>8</strong>
 
               <span>Bidang Spesialisasi</span>
             </div>
@@ -142,6 +142,8 @@
             <button class="doctor-filter-btn" data-filter="anak">Anak</button>
 
             <button class="doctor-filter-btn" data-filter="paru">Paru</button>
+
+            <button class="doctor-filter-btn" data-filter="saraf">Saraf</button>
 
             <button class="doctor-filter-btn" data-filter="radiologi">
               Radiologi
@@ -636,6 +638,51 @@
                 </div>
               </div>
             </article>
+
+            <!-- =====================================
+                 11 - DEWI PURNAMA SARI ISMY
+            ====================================== -->
+
+            <article
+              class="doctor-card-full reveal"
+              data-category="saraf"
+              data-search="dewi purnama sari ismy saraf syaraf neurologi"
+            >
+              <div class="doctor-card-photo">
+                <img
+                  src="assets/img/doctors/dr.dewi.png"
+                  alt="dr. Dewi Purnama Sari Ismy, Sp.N"
+                />
+
+                <div class="doctor-photo-bg"></div>
+
+                <div class="doctor-card-number">11</div>
+              </div>
+
+              <div class="doctor-card-body">
+                <div class="doctor-specialty-badge">SARAF</div>
+
+                <h3>dr. Dewi Purnama Sari Ismy, Sp.N</h3>
+
+                <p class="doctor-position">Spesialis Saraf</p>
+
+                <div class="doctor-divider"></div>
+
+                <div class="doctor-schedule-list">
+                  <div class="doctor-schedule-item">
+                    <span>Senin</span>
+
+                    <strong>15.00 - 17.00 WIB</strong>
+                  </div>
+
+                  <div class="doctor-schedule-item">
+                    <span>Rabu</span>
+
+                    <strong>15.00 - 17.00 WIB</strong>
+                  </div>
+                </div>
+              </div>
+            </article>
           </div>
 
           <!-- EMPTY STATE -->
@@ -727,6 +774,86 @@
 
     <script src="assets/js/app.js"></script>
 
-    <script src="assets/js/doctors.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const searchInput = document.getElementById("doctorSearch");
+        const filterButtons = document.querySelectorAll(".doctor-filter-btn");
+        const doctorGrid = document.getElementById("doctorGrid");
+        const doctorEmpty = document.getElementById("doctorEmpty");
+
+        if (!searchInput || !doctorGrid || !doctorEmpty) return;
+
+        const doctorCards = Array.from(
+          doctorGrid.querySelectorAll(".doctor-card-full"),
+        );
+
+        let activeFilter = "all";
+
+        function normalizeText(value) {
+          return (value || "")
+            .toString()
+            .toLowerCase()
+            .normalize("NFD")
+            .replace(/[\u0300-\u036f]/g, "")
+            .trim();
+        }
+
+        function filterDoctors() {
+          const keyword = normalizeText(searchInput.value);
+          let visibleCount = 0;
+
+          doctorCards.forEach(function (card) {
+            const category = normalizeText(card.dataset.category);
+            const searchData = normalizeText(
+              (card.dataset.search || "") + " " + card.textContent,
+            );
+
+            const categoryMatch =
+              activeFilter === "all" || category === activeFilter;
+
+            const searchMatch = keyword === "" || searchData.includes(keyword);
+
+            const isVisible = categoryMatch && searchMatch;
+
+            card.style.display = isVisible ? "" : "none";
+
+            if (isVisible) {
+              visibleCount++;
+            }
+          });
+
+          doctorEmpty.style.display = visibleCount === 0 ? "block" : "none";
+          doctorGrid.classList.toggle(
+            "is-filtered",
+            keyword !== "" || activeFilter !== "all",
+          );
+        }
+
+        filterButtons.forEach(function (button) {
+          button.addEventListener("click", function () {
+            filterButtons.forEach(function (btn) {
+              btn.classList.remove("active");
+            });
+
+            this.classList.add("active");
+            activeFilter = normalizeText(this.dataset.filter);
+
+            filterDoctors();
+          });
+        });
+
+        searchInput.addEventListener("input", filterDoctors);
+
+        searchInput.addEventListener("keydown", function (event) {
+          if (event.key === "Escape") {
+            searchInput.value = "";
+            filterDoctors();
+            searchInput.blur();
+          }
+        });
+
+        filterDoctors();
+      });
+    </script>
   </body>
 </html>
